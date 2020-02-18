@@ -1,0 +1,15 @@
+{
+  "name": "01-workshop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Daniel Floyd <gleek.dan@gmail.com> (https://df-react-portfolio.herokuapp.com/)",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^4.0.1"
+  }
+}
