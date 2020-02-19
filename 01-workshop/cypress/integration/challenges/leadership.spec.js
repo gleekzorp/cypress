@@ -7,11 +7,12 @@
 describe('Go to qap, hover navigation, click leadership, assert Carlos', function() {
     it('visits qap', function() {
         cy.visit('https://qap.dev')
-        cy.get('.Header-nav-inner > span:nth-child(1) > span:nth-child(2) > a:nth-child(2)')
-        .click({ force: true })
+        cy.get('.Header-nav-folder-item')
+            .contains('Leadership')
+            .click({ force: true })
 
         cy.get('#block-yui_3_17_2_29_1471286434871_44722 > .sqs-block-content > :nth-child(1) > strong')
-        .should('contain', 'Carlos Kidman')
+            .should('contain', 'Carlos Kidman')
     })
 })
 
